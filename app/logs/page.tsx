@@ -35,7 +35,7 @@ const LogsPage: React.FC = () => {
         
         <div className="divide-y divide-winter-100">
           {logsData.map((log, index) => (
-            <LogItem key={log.id} log={log} isLast={index === logsData.length - 1} />
+            <LogItem key={log.id} {...log} />
           ))}
         </div>
       </div>

@@ -170,7 +170,7 @@ export const PerplexityInput: React.FC<PerplexityInputProps> = ({ onSubmit, plac
           {/* Left Actions */}
           <div className="flex items-center gap-1 md:gap-2">
             <button className="p-2 rounded-full text-[#5F7A92] hover:text-[#2D3A45] hover:bg-white/60 transition-all" title="Attach file">
-              <Paperclip size={16} md:size={18} strokeWidth={2} />
+              <Paperclip size={16} strokeWidth={2} />
             </button>
             <button className="flex items-center gap-2 px-2 md:px-3 py-1.5 rounded-full text-xs font-medium text-[#5F7A92] bg-white/50 hover:bg-white hover:text-[#2D3A45] transition-all border border-transparent hover:border-[#D0DDEA]">
               <Globe size={14} />
@@ -188,9 +188,9 @@ export const PerplexityInput: React.FC<PerplexityInputProps> = ({ onSubmit, plac
               `}
             >
               {isListening ? (
-                <Square size={16} md:size={18} fill="currentColor" strokeWidth={0} />
+                <Square size={16} fill="currentColor" strokeWidth={0} />
               ) : (
-                 <Mic size={18} md:size={20} strokeWidth={2} />
+                 <Mic size={18} strokeWidth={2} />
               )}
             </button>
 
@@ -208,10 +208,10 @@ export const PerplexityInput: React.FC<PerplexityInputProps> = ({ onSubmit, plac
             >
               {isLoading ? (
                  <motion.div animate={{ rotate: 360 }} transition={{ duration: 1, repeat: Infinity }}>
-                    <Sparkles size={14} md:size={16} />
+                    <Sparkles size={14} />
                  </motion.div>
               ) : (
-                 <ArrowRight size={16} md:size={18} strokeWidth={2.5} />
+                 <ArrowRight size={16} strokeWidth={2.5} />
               )}
             </button>
           </div>

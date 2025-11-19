@@ -10,8 +10,6 @@ export const metadata: Metadata = {
   description: "Enterprise Workflow Intelligence",
 };
 
-import { LayoutWrapper } from "../components/LayoutWrapper";
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -20,11 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <AppRouterCacheProvider>
-          <LayoutWrapper>
-            {children}
-          </LayoutWrapper>
-        </AppRouterCacheProvider>
+        <LayoutWrapper>
+          {children}
+        </LayoutWrapper>
       </body>
     </html>
   );
